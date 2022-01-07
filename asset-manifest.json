@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/groww-bank-app/static/css/main.a72f83e4.css",
-    "main.js": "/groww-bank-app/static/js/main.d4549e6e.js",
+    "main.js": "/groww-bank-app/static/js/main.26bd8dd1.js",
     "static/js/787.ccc040cb.chunk.js": "/groww-bank-app/static/js/787.ccc040cb.chunk.js",
     "index.html": "/groww-bank-app/index.html",
     "main.a72f83e4.css.map": "/groww-bank-app/static/css/main.a72f83e4.css.map",
-    "main.d4549e6e.js.map": "/groww-bank-app/static/js/main.d4549e6e.js.map",
+    "main.26bd8dd1.js.map": "/groww-bank-app/static/js/main.26bd8dd1.js.map",
     "787.ccc040cb.chunk.js.map": "/groww-bank-app/static/js/787.ccc040cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a72f83e4.css",
-    "static/js/main.d4549e6e.js"
+    "static/js/main.26bd8dd1.js"
   ]
 }
