@@ -1,38 +1,42 @@
 .App {
   text-align: center;
+  color: #212121;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.action-section{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.table-container{
+  border: 1px solid #ccc;
+  height: 70vh;
+}
+
+.table-container table {
+  height: 90%;
+}
+
+.table-container table tbody tr{
+  cursor: pointer;
+}
+
+.pagination{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.pagination ul {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bank-details-container table{
+  width: 50%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }

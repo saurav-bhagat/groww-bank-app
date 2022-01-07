@@ -1,21 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Pagination from '@mui/material/Pagination';
 import { useNavigate } from "react-router-dom";
 
 import { usePagination } from "../utils/Pagination";
+import './../App.css';
 
 
-const BankTable = ({ cityBanks, loading, error }) => {
+const BankTable = ({ cityBanks, error, itemsCount }) => {
 
     const [ currentPageData, setCurrentPageData ] = useState([]);
-
     const [
         totalPages,
         startPageIndex,
         endPageIndex,
         currentPage,
         displayPage
-    ] = usePagination(10, cityBanks.length);
+    ] = usePagination(itemsCount, cityBanks.length);
     
     const navigate = useNavigate();
 
@@ -27,12 +27,11 @@ const BankTable = ({ cityBanks, loading, error }) => {
 
     return (
         <div>
-            {loading && <div>Bank Data Loading... </div>}
 
             {error && <div>{JSON.stringify(error)}</div>}
 
-            {!loading && !error && tempCurrentData.length > 0 &&
-                <div>
+            {!error && tempCurrentData.length > 0 &&
+                <div className="table-container">
                     <table>
                         <thead>
                             <tr>
@@ -61,6 +60,7 @@ const BankTable = ({ cityBanks, loading, error }) => {
                         count={totalPages} 
                         onChange={(event, value) => displayPage(value)} 
                         color="primary"
+                        className="pagination"
                     />
                 </div>
             }
