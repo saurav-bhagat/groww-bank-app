@@ -59,7 +59,13 @@ const AllBanks = () => {
     }
 
     const handleInputChange = (e) => {
-        console.log("HandleInput change called", e.target.value, category, cityBanks);
+        
+        if(category === 'all'){
+            alert("Please choose valid category to perfrom search..");
+            inputRef.current.value = '';
+            return;
+        }
+
         let searchStr = e.target.value.toUpperCase();
         console.log(searchStr);
         const results = filter(cityBanks, (item) => {

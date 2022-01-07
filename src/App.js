@@ -13,7 +13,7 @@ const App = () => {
 	console.log("Inside app component")
 	return (
 		<div className="App">
-			<Router>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Routes>
 					<Route exact path="/" element={ <Home />} />
 					<Route exact path="/all-banks" element={<AllBanks />} />
